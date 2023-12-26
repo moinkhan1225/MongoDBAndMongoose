@@ -4,7 +4,7 @@ const mongoose = require('mongoose');
 
 mongoose.connect("mongodb+srv://admin:moinkhan456@cluster0.dxjcj.mongodb.net/?retryWrites=true&w=majority",{ useNewUrlParser: true, useUnifiedTopology: true });
 
-const personSchema = new mongoose({
+const personSchema = new mongoose.Schema({
   name:{
     type:String,
     required:true
