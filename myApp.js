@@ -26,7 +26,7 @@ const createAndSavePerson = (done) => {
  })
 
  arhaanHamid.save((err,data)=>{
-  if(err) return console.log(err);
+  if(err) return console.error(err);
   done(null , data);
 
  })
