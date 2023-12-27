@@ -104,17 +104,17 @@ const removeManyPeople = (done) => {
 };
 
 const queryChain = (done) => {
-  const foodToSearch = "hamburger";
+  const foodToSearch = "burrito";
   Person.find({favoriteFoods:[foodToSearch]})
-  .sort({name:1})
+  .sort('name')
   .limit(2)
-  .select({age:0})
+  .select('-age')
   .exec((err,data)=>{
     if(err) return console.error(err)
     done(null,data)
   });
 };
-console.log(queryChain);
+console.log(queryChain)
 
 /** **Well Done !!**
 /* You completed these challenges, let's go celebrate !
