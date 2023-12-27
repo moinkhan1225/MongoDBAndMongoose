@@ -47,7 +47,7 @@ const personName ={name:"Moin Khan"};
 const findPeopleByName = (personName, done) => {
   Person.find(personName,((err,data)=>{
     if(err) return console.error(err)
-    done(null /*, data*/);
+    done(null , data);
   }))
   
 };
