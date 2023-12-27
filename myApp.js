@@ -114,7 +114,7 @@ const queryChain = (done) => {
     done(null,data)
   });
 };
-  
+console.log(queryChain);
 
 /** **Well Done !!**
 /* You completed these challenges, let's go celebrate !
